@@ -4,12 +4,12 @@ postgreSQL建table
 
 ```
 CREATE TABLE orders (
-    id integer NOT NULL,
+    id SERIAL NOT NULL,
     message text
 );
 
 CREATE TABLE patients (
-    id integer NOT NULL,
+    id SERIAL NOT NULL,
     name character varying(20),
     order_id integer
 );
